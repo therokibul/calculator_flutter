@@ -12,7 +12,7 @@ class Calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calculator',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.teal),
       home: SimpleCalculator(),
     );
   }
@@ -130,9 +130,9 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
               children: [
                 TableRow(
                   children: [
-                    buildButton('C', 1, Colors.redAccent),
+                    buildButton('C', 1, Colors.red),
                     buildButton('⌫', 1, Colors.blueAccent),
-                    buildButton('÷', 1, Colors.redAccent),
+                    buildButton('÷', 1, Colors.blueAccent),
                   ],
                 ),
                 TableRow(
@@ -180,7 +180,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                   buildButton('+', 1, Colors.blue),
                 ]),
                 TableRow(children: [
-                  buildButton('=', 2, Colors.redAccent),
+                  buildButton('=', 2, Colors.red),
                 ]),
               ],
             ),
